@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>My Notes</h1>
+
+<a href="{% url 'notes' %}">Create Note</a>
+<br>
+<button>Cancel</button>
+    {% for Document in data %}
+    <ul>
+        <li>Title: {{ Document.title }}</li>
+        <li>Note: {{ Document.content }}</li>
+        <li>Created: {{ Document.created_at }}</li>
+    </ul>
+    {% endfor %}
+{% endblock %}
