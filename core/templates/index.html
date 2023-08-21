@@ -1,0 +1,27 @@
+<!-- {% extends 'base.html' %} -->
+{% block title %} {% endblock %}
+{% block content %}
+<div class="text-center p-3">
+<h1>Notes App</h1>
+<p class="lead mb-4 text-break">The Notes App is a great place to write down notes that nobody else can access but yourself. Create a free account and start storing your notes. Sign up or login below.</p>
+</div>
+<div class="text-end column">
+    <p class="lead mb-4 text-center p-5">Here are some examples of the notes app</p>
+<div class="mx-3">
+    <label for="freeform">Example</label>
+<br>
+    <textarea id="freeform" name="freeform" rows="5" cols="50"> Enter the text here</textarea>
+<br>
+    <button>Save</button>
+    <button>Cancel</button>
+</div>
+<div class="text-start position-absolute top-50 start-0 translate-middle-y mx-3">
+    <label for="freeform">Example</label>
+<br>
+    <textarea id="freeform" name="freeform" rows="5" cols="50">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</textarea>
+<br>
+    <button>Save</button>
+    <button>Cancel</button>
+</div>
+</div>
+{% endblock %}
